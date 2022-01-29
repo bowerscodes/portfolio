@@ -1,12 +1,17 @@
-body {
+* {
   font-family: robot "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+  line-height: 1rem;
 }
 
 .logo {
   color: white;
   font-family: "Manrope";
   font-weight: 800;
-  font-size: 48px;
+  font-size: 96px;
   text-shadow:
   
     /* WHITE GLOW */ rgba(255, 255, 255, 0.9) 0px 0px 4px,
