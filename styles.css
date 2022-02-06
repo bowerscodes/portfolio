@@ -4,39 +4,269 @@
   padding: 0;
 }
 
+body {
+}
+
+/*  */
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "left main right"
+    "left footer right";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 0.24fr 2fr auto 0.6fr;
+  /* height: 100vh; */
+  text-align: center;
+  /* justify-items: center; */
+  /* align-items: center; */
+  /* background-color: #cdedfd; */
+  background-color: #cdedfd;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    -45deg,
+    #f5fbfe,
+    #f5fbfe 20px,
+    #cdedfd 20px,
+    #cdedfd 100px
+  );
+}
+
+#nav {
+  /* background: palevioletred; */
+  /* grid-area: "nav"; */
+  display: flex;
+  flex-flow: row wrap;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  vertical-align: middle;
+  height: 3rem;
+  font-weight: bold;
+  justify-content: center;
+  color: #dec5e3;
+  /* color: yellow; */
+}
+
+​#menu-item {
+  margin: 5px;
+}
+
+#header {
+  /* background: black; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background: white;
+  border: 0.9vh solid black;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-area: "main";
+  padding: 1rem 3rem;
+}
+
+.flex-wide {
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/*  */
+
+#left {
+  /* background: black; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+#right {
+  /* background: black; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+hr {
+  width: 10vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-top: 0.9vw dashed black;
+  margin: 4vh auto 3vh auto;
+}
+
 h1 {
+  text-align: center;
   font-family: "Manrope";
   font-weight: 800;
   color: white;
 }
 
+h2 {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 5vw;
+}
+
+h3 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+a {
+  text-decoration: none;
+  color: #b6dcfe;
+  font-weight: bold;
+  /* vertical-align: middle; */
+}
+a:hover {
+  color: #dec5e3;
+}
+a:active {
+  color: #81f7e5;
+}
+
+figure {
+  padding: 3%;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/*  */
+/* LOGO */
+
 .logo {
+  /* position: absolute; */
+  /* vertical-align: bottom; */
+
+  /* text-transform: uppercase; */
+  text-align: center;
+  font-size: 7vw;
   text-shadow: 
-  /* WHITE GLOW */ rgba(255, 255, 255, 0.9) 0px 0px 4px,
-    /* BLACK OUTLINE */ -1px 0px 1px black, 0px -1px 1px rgb(53, 30, 40),
-    -1px -1px 1px black, -1px -1px 1px rgb(53, 30, 40), 0px -1px 1px black,
-    -1px 0px 1px rgb(53, 30, 40), 1px 0px 1px black,
-    0px -1px 1px rgb(53, 30, 40), 1px 1px 1px black,
-    1px -1px 1px rgb(53, 30, 40), /* '3D' BACKING */ 1px 0px 1px black,
-    0px 1px 1px rgb(53, 30, 40), 2px 1px 1px black, 1px 2px 1px rgb(53, 30, 40),
-    3px 2px 1px black, 2px 3px 1px rgb(53, 30, 40), 4px 3px 1px black,
-    3px 4px 1px rgb(53, 30, 40), 5px 4px 1px black, 4px 5px 1px rgb(53, 30, 40),
-    6px 5px 1px black, 5px 6px 1px rgb(53, 30, 40), 7px 6px 1px black;
-  padding-bottom: 10px;
+  /* WHITE GLOW rgba(255, 255, 255, 0.9) 0px 0px 8px, */
+    /* BLACK OUTLINE */ -1px
+      0px 1px rgb(53, 30, 40),
+    0px -1px 1px black, 0px -1px 1px black, -1px 0px 1px #313d47,
+    1px 0px 1px black, 0px -1px 1px #313d47, 1px 1px 1px black,
+    1px -1px 1px #313d47, /* '3D' BACKING */ -1px -1px 1px black,
+    0px -1px 1px #313d47, 1px 0px 1px black, 1px -2px 1px #313d47,
+    2px -1px 1px black, 2px -3px 1px #313d47, 3px -2px 1px black,
+    3px -4px 1px #313d47, 4px -3px 1px black, 4px -5px 1px #313d47,
+    5px -4px 1px black, 5px -6px 1px #313d47, 6px -5px 1px black,
+    6px -7px 1px #313d47, 7px -6px 1px black, 7px -8px 1px #313d47,
+    8px -7px 1px black, 8px -9px 1px #313d47, 9px -8px 1px black,
+    9px -10px 1px #313d47, 10px -9px 1px black;
+  padding-top: 15vh;
+  padding-bottom: 3vh;
+  /* padding-bottom: 10px; */
+  /* bottom: 8vh; */
 }
 
-.front-page-content {
-  position: absolute;
-  bottom: 5%;
+#logo {
+  /* vertical-align: bottom; */
+  /* height: 100%; */
+  /* bottom: 3%; */
 }
 
-#header-container {
-  padding: 3% 15%;
-  height: 75vh;
-  text-align: left;
-  background-color: grey;
+#menu-item {
+  margin: 5px;
+  font-size: large;
+  text-shadow: 1px 1px 3px #313d47;
+}
+
+#about-me {
+}
+
+#projects {
+}
+
+#contact {
+}
+
+/* ELEMENTS */
+
+#fun-fact-box {
+  width: 150px;
+  padding: 3%;
+}
+
+#fun-fact {
+  font-size: 10vw;
+  line-height: 1;
+}
+
+#project-row {
+  margin: 1vh;
+  background-color: #dec5e3;
+  line-height: 2rem;
+}
+
+#contact {
+  margin: 2vh 1vh 0;
+}
+
+main {
+  box-shadow: 
+  /* WHITE GLOW rgba(255, 255, 255, 0.9) 0px 0px 10px, */
+    /* BLACK OUTLINE */ -1px
+      0px 1px #151a1f,
+    0px -1px 1px black, 0px -1px 1px black, -1px 0px 1px #151a1f,
+    1px 0px 1px black, 0px -1px 1px #151a1f, 1px 1px 1px black,
+    1px -1px 1px #151a1f, /* '3D' BACKING */ -1px -1px 1px black,
+    0px -1px 1px #313d47, 1px 0px 1px black, 1px -2px 1px #313d47,
+    2px -1px 1px black, 2px -3px 1px #313d47, 3px -2px 1px black,
+    3px -4px 1px #313d47, 4px -3px 1px black, 4px -5px 1px #313d47,
+    5px -4px 1px black, 5px -6px 1px #313d47, 6px -5px 1px black,
+    6px -7px 1px #313d47, 7px -6px 1px black, 7px -8px 1px #313d47,
+    8px -7px 1px black, 8px -9px 1px #313d47, 9px -8px 1px black,
+    9px -10px 1px #313d47, 10px -9px 1px black;
 }
 
 footer {
   text-align: center;
+  vertical-align: middle;
+  /* color: yellow; */
+  bottom: 0;
+}
+
+/*  */
+/*  */
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 12vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+  }
+  .logo {
+    font-size: 11vw;
+  }
 }
