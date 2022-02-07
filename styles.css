@@ -256,6 +256,12 @@ footer {
   .logo {
     font-size: 12vw;
   }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -278,7 +284,7 @@ footer {
     font-size: 4rem;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   hr {
     width: 7vw;
