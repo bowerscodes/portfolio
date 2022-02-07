@@ -220,6 +220,7 @@ p {
 #fun-fact {
   font-size: 10vh;
   line-height: 1;
+  text-align: center;
 }
 
 #project-row {
