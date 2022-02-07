@@ -303,8 +303,6 @@ footer {
 @media screen and (max-width: 600px) {
   main {
     padding: 1rem 1.5rem;
-    text-align: justify;
-    text-align-last: center;
   }
   .logo {
     font-size: 12vw;
@@ -314,5 +312,9 @@ footer {
   }
   h3 {
     font-size: 4vw;
+  }
+  p {
+    text-align: justify;
+    text-align-last: center;
   }
 }
