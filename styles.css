@@ -50,10 +50,6 @@ body {
   /* color: yellow; */
 }
 
-​#menu-item {
-  margin: 5px;
-}
-
 #header {
   /* background: black; */
   grid-column-start: 1;
@@ -215,7 +211,7 @@ p {
 }
 
 #fun-fact {
-  font-size: 10vw;
+  font-size: 10vh;
   line-height: 1;
 }
 
@@ -268,5 +264,27 @@ footer {
   }
   .logo {
     font-size: 11vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grid {
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+  }
+  .logo {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  hr {
+    width: 7vw;
+    border-top: 0.7vw dashed black;
+  }
+  main {
+    padding: 1rem 4vw;
   }
 }
