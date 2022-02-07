@@ -62,7 +62,7 @@ main {
   flex-flow: row wrap;
   justify-content: center;
   background: white;
-  border: 0.9vh solid black;
+  border: 0.8vh solid black;
 
   grid-column-start: 2;
   grid-column-end: 3;
@@ -73,6 +73,12 @@ main {
 .flex-wide {
   flex-flow: column wrap;
   width: 100%;
+}
+
+.flex-75 {
+  flex-flow: column wrap;
+  width: 75%;
+  margin: auto;
 }
 
 .flex {
@@ -208,6 +214,7 @@ p {
 #fun-fact-box {
   width: 150px;
   padding: 3%;
+  text-align: center;
 }
 
 #fun-fact {
@@ -219,6 +226,7 @@ p {
   margin: 1vh;
   background-color: #dec5e3;
   line-height: 2rem;
+  text-align: center;
 }
 
 #contact {
@@ -255,12 +263,14 @@ footer {
 @media screen and (max-width: 600px) {
   main {
     padding: 1rem 1.5rem;
+    text-align: justify;
+    text-align-last: center;
   }
   .logo {
     font-size: 12vw;
   }
   h2 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   h3 {
     font-size: 4vw;
@@ -268,6 +278,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  main {
+    border: 0.6vh solid black;
+  }
   .grid {
     grid-template-columns: 0.5fr 5fr 0.5fr;
   }
