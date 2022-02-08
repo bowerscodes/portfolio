@@ -78,7 +78,8 @@ main {
 .flex-75 {
   flex-flow: column wrap;
   width: 75%;
-  margin: auto;
+  margin: 0 auto;
+  align-content: center;
 }
 
 .flex {
