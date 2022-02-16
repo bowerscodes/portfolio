@@ -121,7 +121,7 @@ hr {
 
 h1 {
   text-align: center;
-  font-family: "Manrope";
+  font-family: "Roboto";
   font-weight: 800;
   color: white;
 }
@@ -195,6 +195,23 @@ p {
   /* bottom: 3%; */
 }
 
+/* BLINKER */
+/* .blinker:after {
+  content: '_';
+  display: inline-block;
+  animation: blink 1s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
 #menu-item {
   margin: 5px;
   font-size: large;
@@ -258,6 +275,8 @@ footer {
   /* color: yellow; */
   bottom: 0;
 }
+
+
 
 /*  */
 /*  */
