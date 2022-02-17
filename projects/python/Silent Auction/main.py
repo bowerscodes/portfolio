@@ -26,5 +26,3 @@ while active:
         max_key = max(bids, key=bids.get)
         print(f"the winning bidder is: {max_key} with £{bids[max_key]}")
         active = False
-
-# ALTERNATIVE: Angela used a for loop to loop through the dictionary to find a winner.
