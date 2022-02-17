@@ -303,11 +303,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1440px) {
   .grid {
     grid-template-columns: 1fr 4fr 1fr;
   }
-}
+} */
 
 @media screen and (max-width: 800px) {
   main {
