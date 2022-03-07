@@ -1,7 +1,6 @@
 
 // Detecting the Button Press
 
-// Loop to assign an Event Listener (for mouse clicks!) to each item with the class 'drum'
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
 document.querySelectorAll(".drum")[i].addEventListener("click", function () {
