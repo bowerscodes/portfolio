@@ -1,21 +1,33 @@
+// Counting the buttons
+
+const numberOfFrumButtons = document.querySelectorAll(".drum").length;
 
 // Detecting the Button Press
 
-for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
+for (var i = 0; i < numberOfFrumButtons; i++) {
 
 document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         
     let buttonInnerHTML = this.innerHTML;
-    makeSound(buttonInnerHTML);
     
+    makeSound(buttonInnerHTML);
+
+    buttonAnimation(buttonInnerHTML);
+
 });
 
+}
 
 // Detecting keyboard press
 
 document.addEventListener("keydown", function (event) {
+    
     makeSound(event.key);
+
+    buttonAnimation(event.key);
+
 });
+
 
 function makeSound(key) {
     
@@ -55,7 +67,21 @@ function makeSound(key) {
             crash.play();
             break;
 
-            default: console.log(buttonInnerHTML);
-        }
-    };
+            default: console.log(key);
+    }
+}
+
+
+function buttonAnimation(currentKey) {
+
+    let activeButton = document.querySelector("." + currentKey);
+    
+    activeButton.classList.add("pressed");
+    console.log("pressed!")
+
+
+    setTimeout(function () {
+        activeButton.classList.remove("pressed");
+    }, 100);
+    console.log("UNpressed!")
 }
