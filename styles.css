@@ -138,6 +138,10 @@ h3 {
   font-size: 3vw;
 }
 
+h5 {
+  color: black;
+}
+
 a {
   text-decoration: none;
   color: #b6dcfe;
@@ -241,11 +245,37 @@ p {
   text-align: center;
 }
 
-#project-row {
-  margin: 1vh;
+.project-toggle {
+  margin: 1vh 1vh 0;
   background-color: #dec5e3;
   line-height: 2rem;
   text-align: center;
+  cursor: pointer;
+}
+
+/* .initiallyHidden { display: none; } */
+
+.projects-drop {
+  margin: 0 1vh 1vh;
+  background-color: #b6dcfe;
+  line-height: 2rem;
+  text-align: center;
+  display: none;
+  box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
+tr:hover {
+  background-color: rgba(255,255,255,0.3);
+  line-height: 2rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+.highlight {
+  background-color: rgba(255,255,255,0.3);
 }
 
 #contact {
