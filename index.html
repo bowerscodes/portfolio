@@ -1,178 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <link rel="stylesheet" href="design.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Google Fonts -->
-    <link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
-    <!-- <script
-      src="https://kit.fontawesome.com/83ef308baa.js"
-      crossorigin="anonymous"></script> -->
 
-    <title>James Bowers</title>
-  </head>
-  <body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+</head>
+<body>
     <div class="grid">
-      <div id="nav">
-        <a id="menu-item" href="#about"><div id="menu-item">About</div></a>
-        <a id="menu-item" href="#projects"><div id="menu-item">Projects</div></a>
-        <a id="menu-item" href="#contact"><div id="menu-item">Contact</div></a>
-      </div>
-      <div id="header">
-        <div><h1 class="logo">James Bowers</h1></div>
-      </div>
-      <div id="left"></div>
-      <main>
-        <div id="about" class="flex-wide">
-          <div class="flex-wide">
-            <hr />
-            <h2>Who am i?</h2>
-            <br />
-            <p>
-              I'm James. I've loved creating things for as long as I can remember - from tinkering & crafting as a young child, to computer-building, editing, animation, web development and game-modding in adolescence. As a product of the nineties, I also grew up alongside the internet - it was ugly as hell, but I was obsessed, and still am.
-            </p>
-            <br>
-            <p>
-              After studying for my degree in Aerospace Engineering, I landed a career spanning Engineering, Project Management and Compliance. I've gained a great set of skills - but without realising, I'd taken my eye off the ball with Tech. So this portfolio documents my journey back! To find out how it's going, check out what I've been working on in the <a href="#projects">projects</a> section - or, even better, <a href="#contact">get in touch!</a>
-            </p>
-            <br>
-            <br>
-          </div>
-          <div class="flex-wide">
-            <h3>Some random facts:</h3>
-            <br />
-          </div>
-        <div class="flex">
-          <div id="fun-fact-box">
-            <figure>
-              <p id="fun-fact">✈️</p>
-              <figcaption>I can fly a plane!</figcaption>
-            </figure>
-          </div>
-          <div id="fun-fact-box">
-            <figure>
-              <p id="fun-fact">🎧</p>
-              <figcaption>I'm also a DJ!</figcaption>
-            </figure>
-          </div>
-          <div id="fun-fact-box">
-            <figure>
-              <p id="fun-fact">🖥️</p>
-              <figcaption>I built my first computer aged 13!</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-        <div id="projects" class="flex-wide">
-          <hr />
-          <h2>Projects</h2>
-          <br />
-          <!-- <div id="html-css" class="project-toggle"><h4>HTML/CSS</h4></div>
-          <div id="html-css-projects" class="projects-drop">
-            <table>
-              <tr>
-                <td><a href="">
-                  <h5>HTML/CSS project 1</h5></a></td>
-              </tr>
-              <tr>
-                <td><h5>HTML/CSS project 2</h5></td>
-              </tr>
-              <tr>
-                <td><h5>HTML/CSS project 3</h5></td>
-              </tr>
-            </table>
-          </div> -->
-          <div id="js" class="project-toggle"><h4>JavaScript</h4></div>
-          <div id="js-projects" class="projects-drop">
-            <table>
-            <tr>
-              <td><a href="https://github.com/bowerscodes/portfolio/tree/master/projects/JavaScript/Drum-Kit" target="_blank">
-                <h5>Drum Kit</h5></a></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/bowerscodes/portfolio/tree/master/projects/JavaScript/Simon-Says" target="_blank">
-                <h5>Simon Says</h5></a></td>
-            </tr>
-          </table>
-          </div>
-          <div id="python" class="project-toggle"><h4>Python</h4></div>
-          <div id="python-projects" class="projects-drop">
-            <table>
-              <tr>
-                <td><a href="https://github.com/bowerscodes/portfolio/tree/master/projects/python/Blackjack" target="_blank">
-                  <h5>Blackjack</h5></a></td>
-              </tr>
-              <tr>
-                <td><a href="https://github.com/bowerscodes/portfolio/tree/master/projects/python/Caesar%20Cypher" target="_blank">
-                  <h5>Caesar Cypher - Message Encryption</h5></a></td>
-              </tr>
-              <tr>
-                <td><a href="https://github.com/bowerscodes/portfolio/tree/master/projects/python/Calculator" target="_blank">
-                  <h5>Calculator</h5></a></td>
-              </tr>
-          </table>
-          </div>
-        </div>
-        <div id="flex-wide">
-          <div id="contact" class="flex-wide">
-            <hr />
-            <h2>Contact</h2>
-            <br />
-            <div class="flex-75">
-              <p>
-                If you've got a project you'd like to discuss, then I'd love to hear from you!
-              </p>
+        <div id="landing" class="page">
+            <div class="backdrop">
+                <h1 class="lighten">James Bowers</h1>
+                <p class="strapline lighten">Developer</p>
             </div>
-            <div class="flex">
-              <div id="contact">
-                <a href="mailto:jamesbowers123@gmail.com" target="_blank">
-                <img src="https://img.icons8.com/glyph-neue/64/000000/email-sign.png"/>
-                </a>
-                <p><a href="mailto:jamesbowers123@gmail.com" target="_blank">Email</a>
-                  </p>
-              </div>
-              <div id="contact">
-                <a href="https://www.github.com/bowerscodes" target="_blank">
-                <img src="https://img.icons8.com/glyph-neue/64/000000/github.png" href=""/>
-                </a>
-                <p><a href="https://www.github.com/bowerscodes" target="_blank">GitHub</a></p> 
-              </div>
-              <div id="contact">
-                <a href="https://www.linkedin.com/in/jamesbowers123" target="_blank">
-                <img src="https://img.icons8.com/glyph-neue/64/000000/linkedin-circled.png" />
-                </a>
-                <p><a href="https://www.linkedin.com/in/jamesbowers123" target="_blank">LinkedIn</a></p>
-              </div>
-              <div id="contact">
-                <a href="https://www.twitter.com/bowerscodes" target="_blank">
-                <img src="https://img.icons8.com/glyph-neue/64/000000/twitter-circled.png"/>
-                </a>
-                <p><a href="https://www.twitter.com/bowerscodes" target="_blank">Twitter</a></p>
-              </div>
-            </div>
-            <hr />
-          </div>
-      </main>
+        </div>
+        <div id="about" class="page">
 
-      <footer>
-        <br>
-        James Bowers 2022 </footer>
-      <!-- Left Padding Column: -->
-      <div id="right"></div>
-      <br> 
+        </div>
+        <div id="projects" class="page">
+
+        </div>
+        <div id="contact" class="page">
+            
+        </div>
+        
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="index.js"></script>
-  </body>
+    
+</body>
 </html>
+
+
+
